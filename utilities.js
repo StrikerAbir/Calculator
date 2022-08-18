@@ -57,6 +57,12 @@ function operation(num1, num2, operation) {
     }
 }
 
+// set input in input inputField by page key
+function setInput(elementId, input) {
+    const element = document.getElementById(elementId);
+    element.value += input;
+}
+
 // set result in board
 function setResult(elementId,result) {
     const element = document.getElementById(elementId);

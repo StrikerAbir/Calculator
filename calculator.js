@@ -10,3 +10,13 @@ document.getElementById('equal').addEventListener('click', function () {
 document.getElementById('ac').addEventListener('click', function () {
     allClear('user-input', 'equal-result');
 })
+
+// buttons
+const buttons = document.getElementsByClassName('btn')
+for (const btn of buttons) {
+    console.log(btn);
+    btn.addEventListener('click', function (event) {
+        const buttonValue = event.target.innerText;
+        setInput('user-input',buttonValue);
+    })
+}
