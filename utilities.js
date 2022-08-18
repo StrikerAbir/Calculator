@@ -11,7 +11,6 @@ function onlyNumberInput(event) {
     }
 }
 
-
 // input field value
 function getInputFieldValue(inputFieldId) {
     const inputText = document.getElementById(inputFieldId);
@@ -22,6 +21,7 @@ function getInputFieldValue(inputFieldId) {
         return 0;
     }
 }
+
 
 // filter number and operator from input inputFieldId
 function filter(userInput) {
@@ -44,6 +44,8 @@ function filter(userInput) {
     const result = operation(num1, num2, operator);
     setResult('equal-result', result);
 }
+
+
 // operations
 function operation(num1, num2, operation) {
     if (operation == '+') {
@@ -75,4 +77,13 @@ function allClear(inputFieldId,elementId) {
     Text.value = '';
     const result = document.getElementById(elementId);
     result.innerText = '';
+}
+
+// clear button function
+function clear(userInput) {
+    const inputValue = getInputFieldValue(userInput);
+     const Value = inputValue.substring(0, inputValue.length - 1);
+
+    const oldValue = document.getElementById(userInput)
+    oldValue.value = Value;
 }
