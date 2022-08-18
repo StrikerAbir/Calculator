@@ -7,7 +7,7 @@
     <title>Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-stone-600 ">
+<body class="bg-stone-600">
     <header class="container mx-auto my-10">
         <h1 class="text-5xl font-bold text-center text-white">Simple <span class="text-cyan-400">Calculator</span></h1>
     </header>
@@ -15,7 +15,7 @@
         <section class="flex justify-center">
             <div class="w-full lg:w-1/2 sm:w-9/12 bg-neutral-300 p-10 rounded-xl ">
                 <div class="h-20 bg-gray-500 text-white rounded-lg border-2 border-black px-5 sm:px-10 py-3 mb-5">
-                    <input id="user-input" class="w-full h-7 focus:outline-none bg-inherit text-lg font-bold" type="text" onkeypress="return onlyNumberInput(event)">
+                    <input id="user-input" class="w-full h-7 focus:outline-none bg-inherit text-lg font-bold" type="text" onkeypress="return onlyNumberInput(event)" onkeypress="enter(event)">
                     <h1 id="equal-result" class="text-xl text-right font-bold"></h1>
                 </div>
                 <!-- buttons -->
