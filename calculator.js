@@ -21,3 +21,7 @@ document.getElementById('equal').addEventListener('click', function () {
     setResult('equal-result', result);
 })
 
+// AC button
+document.getElementById('ac').addEventListener('click', function () {
+    allClear('user-input', 'equal-result');
+})

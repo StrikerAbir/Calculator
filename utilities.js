@@ -37,3 +37,11 @@ function setResult(elementId,result) {
     const element = document.getElementById(elementId);
     element.innerText = `= ${result}`;
 }
+
+// clear input field
+function allClear(inputFieldId,elementId) {
+    const Text = document.getElementById(inputFieldId);
+    Text.value = '';
+    const result = document.getElementById(elementId);
+    result.innerText = '';
+}
